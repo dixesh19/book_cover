@@ -1,4 +1,3 @@
-# Ex.06 Book Front Cover Page Design
 # Date:21/04/2025
 # AIM:
 To design a book front cover page using HTML and CSS.
@@ -29,174 +28,86 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:
+
 ```
-<!DOCTYPE html>
+
 <html>
+    <head>
+        <title>
+            Front cover page
+        </title>
+        <style>
+            .bookpage{
+                height:700px;
+                width:600px;
+                margin-left:30%;
+                background-image: url("BG COVER.jpg");
+                padding:10px;
+                background-size: cover;
+                align:center;
+            }
+            .hr1{
+                width:200px
 
-<head>
-  <title>Book Cover</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color:white;
-    }
-
-    .book-cover {
-      width: 500px;
-      height: 700px;
-      background-color:black;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 50px auto;
-      position: relative;
-    }
-    
-    .book-cover .insight {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      color: azure;
-    }
-    .book-cover .line1
-    {
-      position: absolute;
-      top: 40px;
-      left: 10px;
-      width: 80px;
-    }
-    .book-cover .title1 {
-      position: absolute;
-      top: 80px;
-      left: 50px;
-      font-size: 40px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .title2 {
-      position: absolute;
-      top: 130px;
-      left: 30px;
-      font-size: 40px;
-      font-weight: bold;
-      color:  white;
-    }
-
-    .book-cover .subtitle1 {
-      position: absolute;
-      top: 470px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color:  white;
-    }
-    .book-cover .subtitle2 {
-      position: absolute;
-      top: 500px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .subtitle3 {
-      position: absolute;
-      top: 530px;
-      left: 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-    }
-    .book-cover .line2
-    {
-      position: absolute;
-      top: 480px;
-      left: 20px;
-      width: 160px;
-    }
-    .book-cover .line3
-    {
-      position: absolute;
-      bottom:38px;
-      left: 20px;
-      width: 115px;
-    }
-
-
-    .book-cover .author {
-      position: absolute;
-      bottom: 25px;
-      left: 20px;
-      font-size: 18px;
-      color: whitesmoke;
-    }
-
-    .book-cover .number {
-      position: absolute;
-      bottom: 5px;
-      left: 20px;
-      font-size: 18px;
-      color: white;
-    }
-
-    .book-cover .end {
-      position: absolute;
-      bottom: 5px;
-      right: 50px;
-      font-size: 18px;
-      color: white;
-    }
-    .book-cover .mypic
-    {
-      position: relative;
-      top:550px;
-      left: 370px;
-      width : 8px;
-      height: 8px;
-      background-size:fit;
-    }
-
-
-    .book-cover .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top:  0;
-      left: 10;
-    }
-  </style>
-</head>
-
-<body>
- >
-  <div class="book-cover">
-    <img src="spydre.jpg" alt="Book Cover Image" class="image">
-    <div class="insight"><b><i>Spiderman Across The Spider Verse</i></b></div>
-    <div class="line1"><hr style="color:blanchedalmond"></div>
-    
-    <center><div class="title1" style="font-style:italic;">I Don't Believe Consistency</div></center>
-
-    <div class="title2">  </div>
-    <div class="subtitle1"></div>
-    <div class="bottom"><b><i>Joaquim Dos Santos</i></b></div>
-    <div class="line1"><hr style="color:blanchedalmond"></div>
-    <div class="line3"><hr style="color:red"></div>
-    <div class="author"> Joaquim Dos Santos</div>
-    <div class="number"> Portuguese-American animator and storyboard artist</div>
-
-    
-
-  </div>
-</body>
-
+            }
+            .booktitle{
+                margin-top: 30px;
+                color:magenta;
+                padding:5px;
+                font-size: xx-large;
+            }
+            .subtitle{
+                color:rgb(108, 15, 220);
+                font-size: large;
+            }
+            
+            .mypic{
+                position: relative;
+                top:90px;
+                left:470px;
+                height: 100px;
+                width: 70px;
+            }
+            .hr2{
+                padding-top: 130px;
+            
+            }
+            .ed{
+                position:relative;
+                top: 80px;
+            }
+            .author{
+                font-family: 'Trebuchet MS';
+                font-size: large;
+            }
+            .pb{
+                position: relative;
+                left:420px;
+                top:-50px;
+                font-size: x-large;
+            }
+        </style>
+        <body>
+            <div class="bookpage">
+            <div style="color:rgba(8, 14, 63, 0.584)">EXPERT INSIGHT </div>
+            <div class="hr1"><hr ></div>
+            <div class="booktitle"><h1>Responsive Web Design with html5 and css</h1></div>
+            <div class="subtitle">Develop future-proof responsive websites using <br>the latest html5 and css techniques</div>
+            <div class="mypic"><img src="my photo.jpeg" width="120px" height="140px" ></div>
+            <div class="ed" style="color: rgb(0, 0, 0);">THIRD EDITION</div>
+            <div class="hr2"><hr ></div>
+            <div class="author">
+            <div style="color:rgb(0, 0, 0)" >NETHRA.K (212224230184)</div>
+            <div class="pb" style="color:rgb(198, 16, 104)"> <h3>SEC</h3></div>
+        </div>
+        </body>
+    </head>
 </html>
 
-     
-
 ```
+
 # OUTPUT:
-![Screenshot 2024-12-07 153810](https://github.com/user-attachments/assets/d7468edd-27da-4cd8-8453-b6068dd8c98b)
+![Untitled design (1)](https://github.com/user-attachments/assets/aad94a45-fa24-4e20-bbe9-e6f7305d9379)
 
 
 # RESULT:
