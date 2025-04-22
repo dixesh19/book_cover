@@ -97,8 +97,7 @@ Publish the website in the LocalHost.
             <div class="ed" style="color: rgb(0, 0, 0);">THIRD EDITION</div>
             <div class="hr2"><hr ></div>
             <div class="author">
-            <div style="color:rgb(0, 0, 0)" >NETHRA.K (212224230184)</div>
-            <div class="pb" style="color:rgb(198, 16, 104)"> <h3>SEC</h3></div>
+            <div style="color:rgb(0, 0, 0)" >DINESH (212224240037)</div>
         </div>
         </body>
     </head>
